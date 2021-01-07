@@ -57,5 +57,11 @@
   cursor: pointer;
 }
 
-.menu {
+/* Changing the toggler to be X */
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
 }
