@@ -136,3 +136,14 @@
 .text a:hover {
   letter-spacing: 6px;
 }
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  list-style: none;
+}
