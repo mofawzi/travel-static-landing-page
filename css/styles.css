@@ -1,6 +1,10 @@
 /* Google fonts (Poppins) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
+:root {
+  --overlay-color: #03a9f4;
+}
+
 /* Global styling */
 * {
   margin: 0;
@@ -22,6 +26,11 @@
   background: #111;
   color: #fff;
   z-index: 2;
+}
+
+/* Active class for showing the menu */
+.showcase.active {
+  right: 300px;
 }
 
 /* Header */
@@ -84,7 +93,7 @@
   height: 100%;
 
   /* For the video opacity */
-  background-color: #03a9f4;
+  background-color: var(--overlay-color);
   mix-blend-mode: overlay;
 
   /* The above 2 lines could be 
@@ -117,6 +126,7 @@
   transform: scale(0.7) translateY(-15px);
 }
 
+/* Text styling */
 .text {
   position: relative;
   z-index: 10;
@@ -129,7 +139,6 @@
   text-transform: uppercase;
 }
 
-/* Text Styling */
 .text h3 {
   font-size: 4em;
   font-weight: 700;
@@ -162,6 +171,36 @@
   letter-spacing: 6px;
 }
 
+/* Menu styling */
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  /* Center items vertically */
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  line-height: 50px;
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.menu ul li a:hover {
+  color: var(--overlay-color);
+  transition: 0.3s;
+}
 /* Media Queries for a responsive design */
 @media (max-width: 991px) {
   .showcase,
