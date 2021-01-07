@@ -62,7 +62,7 @@
 
   </section>
 
-  
+  <!-- Toggle Menu -->
   <div class="menu">
     <ul>
       <li><a href="#">Home</a></li>
@@ -73,6 +73,18 @@
     </ul>
   </div>
 
+  <!-- Handling menu with JS -->
+  <script>
+    // get items using classes
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    // Add or remove active class to the items
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
 
 </body>
 </html>
