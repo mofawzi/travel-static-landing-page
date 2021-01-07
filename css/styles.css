@@ -25,6 +25,26 @@
   z-index: 2;
 }
 
+/* Header */
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+
+  display: flex;
+  /* Make the two items aligned vertically */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 /* Toggeler */
 .toggle {
   position: relative;
